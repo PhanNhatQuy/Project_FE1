@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="public/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="public/js/bootstrap.min.js" />
+  <link rel="stylesheet" href="public/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="public/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,200;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./public/font-awesome/fontawesome-free-6.1.1/css/all.css" />
+  <link rel="stylesheet" href="public/css/styles.css" />
+  <title>Phan Nhat Quy</title>
+</head>
+
+<body>
+  <div class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="public/images/logo.png" alt="logo" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ABOUT US</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="aboutus" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                ACCOMODATION
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"></a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">BOOK ROOM</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="bookroom" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                BLOG
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#"></a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- Carousel -->
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" style="width: 100%; height:524px;"
+          src="public/images/scenic-view-of-the-resort-764827.jpg" alt="slide2" role="img"
+          aria-label="Placeholder: First slide">
+        <div class="carousel-caption">
+          <p>25 years of experience</p>
+          <h1>Sea View or Mountain View? <br> Choose Room Today!</h1>
+          <span class="sp-slider-btn-text">LEARN MORE <span class="sp-slider-btn-icon"><i class="fa fa-long-arrow-right"
+                aria-hidden="true"></i></span></span>
+        </div>
+      </div>
+      <div class="carousel-item active">
+        <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" style="width: 100%; height:524px;"
+          src="public/images/palm-trees-at-night-258154.jpg" alt="slide1" role="img"
+          aria-label="Placeholder: First slide">
+        <div class="carousel-caption">
+          <p class="color">25 years of experience</p>
+          <h1>Book Room with All Inclusive <br> Hotel &amp; Resort</h1>
+          <span class="sp-slider-btn-text">LEARN MORE <span class="sp-slider-btn-icon"><i class="fa fa-long-arrow-right"
+                aria-hidden="true"></i></span></span>
+        </div>
+
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="container">
+    <div class="form1">
+      <form class="form-text">
+        <div class="text">
+          <div class="input-tt"><input type="text" id="sppb-form-builder-field-0" name="form-builder-item-[your_name*]"
+              class="sppb-form-control" placeholder="Your Name" required=""><span
+              class="sppb-form-builder-required"></span>
+          </div>
+          <div class="input-tt"><input type="text" id="sppb-form-builder-field-1"
+              name="form-builder-item-[your_surname*]" class="sppb-form-control" placeholder="Surname" required=""><span
+              class="sppb-form-builder-required"></span>
+          </div>
+          <div class="input-tt"><input type="email" id="sppb-form-builder-field-2" name="form-builder-item-[your_mail*]"
+              class="sppb-form-control" placeholder="Your Email" required=""><span
+              class="sppb-form-builder-required"></span></div>
+          <div class="input-tt"><input type="tel" id="sppb-form-builder-field-3" name="form-builder-item-[your_phone*]"
+              class="sppb-form-control" placeholder="Your Phone" required=""><span
+              class="sppb-form-builder-required"></span></div>
+        </div>
+        <div class="select">
+          <div class="select-tt"><select class="sppb-form-control" name="form-builder-item-[room_type]"
+              id="sppb-form-builder-field-4">
+              <option value="">Room Type</option>
+              <option value="Single">Single</option>
+              <option value="Double" selected="">Double</option>
+              <option value="Double Sea View">Double Sea View</option>
+            </select></div>
+          <div class="select-tt"><select class="sppb-form-control" name="form-builder-item-[services_type]"
+              id="sppb-form-builder-field-5">
+              <option value="">Services</option>
+              <option value="All Inlusive" selected="">All Inlusive</option>
+              <option value="Half Board">Half Board</option>
+              <option value="Bed &amp; Breakfast">Bed &amp; Breakfast</option>
+            </select></div>
+        </div>
+        <div class="select">
+          <div class="select-tt"><input type="date" id="sppb-form-builder-field-6" name="form-builder-item-[Check In*]"
+              class="sppb-form-control" required=""><span class="sppb-form-builder-required"></span>
+          </div>
+          <div class="select-tt"><input type="date" id="sppb-form-builder-field-7" name="form-builder-item-[Check Out*]"
+              class="sppb-form-control" required=""><span class="sppb-form-builder-required"></span>
+          </div>
+        </div>
+        <div class="select">
+          <div class="select-tt"><select class="sppb-form-control" name="form-builder-item-[*]"
+              id="sppb-form-builder-field-8" required="">
+              <option value="">adults</option>
+              <option value="1" selected="">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select><span class="sppb-form-builder-required"></span></div>
+          <div class="select-tt"><select class="sppb-form-control" name="form-builder-item-[*]"
+              id="sppb-form-builder-field-9" required="">
+              <option value="">children</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select><span class="sppb-form-builder-required"></span></div>
+          <input type="hidden" name="recipient" value=""><input type="hidden" name="from"
+            value="WW91ciBOYW1lOiBhZG1pbkBleGFtcGxlLmNvbQ=="><input type="hidden" name="addon_id"
+            value="1573394468382"><input type="hidden" name="additional_header"
+            value="UmVwbHktVG86IHt7ZW1haWx9fQpSZXBseS1uYW1lOiB7e2ZpcnN0LW5hbWV9fSB7e2xhc3QtbmFtZX19CkNjOiB7e2VtYWlsfX0="><input
+            type="hidden" name="email_subject" value="e3tzdWJqZWN0fX0gfCB7e2VtYWlsfX0gfCB7e3NpdGUtbmFtZX19"><textarea
+            style="display:none;" name="email_template"
+            aria-label="Not For Read">PHA+PHN0cm9uZz5Gcm9tOjwvc3Ryb25nPnt7Zmlyc3QtbmFtZX19IHt7bGFzdC1uYW1lfX08L3A+CjxwPjxzdHJvbmc+RW1haWw6PC9zdHJvbmc+e3tlbWFpbH19PC9wPgo8cD48c3Ryb25nPlN1YmplY3Q6PC9zdHJvbmc+e3tzdWJqZWN0fX08L3A+CjxwPjxzdHJvbmc+TWVzc2FnZTo8L3N0cm9uZz57e21lc3NhZ2V9fTwvcD4=</textarea><input
+            type="hidden" name="success_message" value="RW1haWwgc3VjY2Vzc2Z1bGx5IHNlbnQh"><input type="hidden"
+            name="failed_message"
+            value="RW1haWwgc2VudCBmYWlsZWQsIGZpbGwgcmVxdWlyZWQgZmllbGQgYW5kIHRyeSBhZ2FpbiE="><input type="hidden"
+            name="captcha_type" value="default">
+        </div>
+        <div class="btn-bookroom "><button type="submit" id="btn-1573394468382"
+            class="sppb-btn sppb-btn-custom sppb-btn-square" aria-label="Book Room"><i class="fa"
+              aria-hidden="true"></i>Book Room</button></div>
+
+      </form>
+    </div>
+  </div>
+  <div class="container">
+    <div class="content">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="Title2">
+            <h3 class="Welcome">Welcome to <span>Luxury</span> <br>
+              Premium Hotel with <br>
+              All Inclusive.</h3>
+            <div class="conten1">If you chose to stay with us you will enjoy modern home comforts in a
+              traditional setting. Whether you are looking for a short weekend break or a longer holiday, we offer a
+              range of packages for the best price. <br><br>Enjoy your vacancy and we do the rest Red quia numquam
+              dolor sit amet.</div>
+
+          </div>
+          <div class="btn">
+            <span class="sp-slider-btn-text"> MORE IMAGES <span class="sp-slider-btn-icon"><i
+                  class="fa fa-long-arrow-right" aria-hidden="true"></i></span></span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img src="public/images/gallery01.jpg" alt="imgconten1" style="max-width: 100%;">
+        </div>
+        <div class="col-md-4">
+          <img src="public/images/gallery02.jpg" alt="imgconten2" style="max-width: 100%;">
+          <img src="public/images/gallery03.jpg" alt="imgconten3" style="max-width: 100%;
+          margin-top: 30px;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bestroom">
+    <div class="container">
+      <div class="best">
+        <h2 class="sppb-addon-title">THE BEST ROOM</h2>
+      </div>
+      <div class="discover">
+        <h3 class="sppb-addon-title">Discover Our <span>Rooms</span></h3>
+        <div class="sppb-addon-content">There are many variations of passages of Lorem Ipsum available, but the
+          <br>majority have suffered words look even slightly believable.
+        </div>
+      </div>
+      <div class="row padding">
+        <div class="col-md-3">
+          <div class="card">
+            <div id="carouselExampleControls8" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item">
+                  <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" style="width: 100%; height: 100%"
+                    src="public/images/room02.jpg" alt="1" role="img" aria-label="Placeholder: First slide">
+                </div>
+                <div class="carousel-item active">
+                  <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" style="width: 100%; height: 100%"
+                    src="public/images/room01.jpg" alt="2" role="img" aria-label="Placeholder: First slide">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls8"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls8"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <div class="item-room">
+                <div class="room-text">
+                  <h2>Double Room</h2>
+                  <span> Room with sea view</span>
+                  <p>Ut enim ad minima veniam, uis rice nostrum exercitationem ut ullam et nis corporis suscipit e
+                    laboriosam et ...</p>
+                </div>
+                <div class="ro-text-two">
+                  <div class="room-book pull-left">
+                    <a href="#" class="res-btn">Book now</a>
+                  </div>
+                  <div class="room-price pull-right">
+                    <p>62.5 $<br><span>/ Night</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div id="carouselExampleControls9" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item">
+                  <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" style="width: 100%; height: 100%"
+                    src="public/images/room03.jpg" alt="3" role="img" aria-label="Placeholder: First slide">
+                </div>
+                <div class="carousel-item active">
+                  <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" style="width: 100%; height: 100%"
+                    src="public/images/room04.jpg" alt="4" role="img" aria-label="Placeholder: First slide">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls9"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls9"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <div class="item-room">
+                <div class="room-text">
+                  <h2>Single Room</h2>
+                  <span> Room with sea view</span>
+                  <p>Ut enim ad minima veniam, uis rice nostrum exercitationem ut ullam et nis corporis suscipit e
+                    laboriosam et ...</p>
+                </div>
+                <div class="ro-text-two">
+                  <div class="room-book pull-left">
+                    <a href="/book-room" class="res-btn">Book now</a>
+                  </div>
+                  <div class="room-price pull-right">
+                    <p>32.5 $<br><span>/ Night</span></p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div id="carouselExampleControls11" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item">
+                  <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" style="width: 100%; height: 100%"
+                    src="public/images/room05.jpg" alt="7" role="img" aria-label="Placeholder: First slide">
+                </div>
+                <div class="carousel-item active">
+                  <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" style="width: 100%; height: 100%"
+                    src="public/images/room06.jpg" alt="8" role="img" aria-label="Placeholder: First slide">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls11"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls11"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <div class="item-room">
+                <div class="room-text">
+                  <h2>Double Room</h2>
+                  <span> Room with mountain view</span>
+                  <p>Ut enim ad minima veniam, uis rice nostrum exercitationem ut ullam et nis corporis suscipit e
+                    laboriosam et ...</p>
+                </div>
+                <div class="ro-text-two">
+                  <div class="room-book pull-left">
+                    <a href="/book-room" class="res-btn">Book now</a>
+                  </div>
+                  <div class="room-price pull-right">
+                    <p>75.5 $<br><span>/ Night</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div id="carouselExampleControls10" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item">
+                  <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" style="width: 100%; height: 100%"
+                    src="public/images/room07.jpg" alt="5" role="img" aria-label="Placeholder: First slide">
+                </div>
+                <div class="carousel-item active">
+                  <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" style="width: 100%; height: 100%"
+                    src="public/images/room08.jpg" alt="6" role="img" aria-label="Placeholder: First slide">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls10"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls10"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <div class="item-room">
+                <div class="room-text">
+                  <h2>Premium Suite</h2>
+                  <span> Room with sea view</span>
+                  <p>Ut enim ad minima veniam, uis rice nostrum exercitationem ut ullam et nis corporis suscipit e
+                    laboriosam et ...</p>
+                </div>
+                <div class="ro-text-two">
+                  <div class="room-book pull-left">
+                    <a href="#" class="res-btn">Book now</a>
+                  </div>
+                  <div class="room-price pull-right">
+                    <p>64.5 $<br><span>/ Night</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="box1">
+              <div class="sppb-addon sppb-addon-text-block">
+                <h3 class="sppb-addon-title-box">Subscribe our Newsletter</h3>
+                <div class="sppb-addon-content-box">Lorem Ipsum is simply dummy text of the printing and typesetting
+                  industry
+                  norem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                  took
+                  a galley of type.</div>
+              </div>
+              <div class="mail">
+                <input type="text" placeholder="Your mail">
+              </div>
+              <div class="btnsend">
+                <span>
+                  <i class="fa-solid fa-paper-plane"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="box1">
+              <div class="sppb-addon sppb-addon-text-block">
+                <h3 class="sppb-addon-title-box">Subscribe our Newsletter</h3>
+                <div class="sppb-addon-content-box">Lorem Ipsum is simply dummy text of the printing and typesetting
+                  industry
+                  norem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                  took
+                  a galley of type.</div>
+              </div>
+              <div class="btnsend2">
+                <div class="btn1">
+                  <span class="sp-slider-btn-text2">GALLERY<span class="sp-slider-btn-icon"><i
+                        class="fa fa-long-arrow-right" aria-hidden="true"></i></span></span>
+                </div>
+                <div class="btn2">
+                  <span class="sp-slider-btn-text2">ALL ROOMS<span class="sp-slider-btn-icon"><i
+                        class="fa fa-long-arrow-right" aria-hidden="true"></i></span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="our">
+    <div class="container">
+      <div class="best">
+        <h2 class="sppb-addon-title">THE BEST ROOM</h2>
+      </div>
+      <div class="discover">
+        <h3 class="sppb-addon-title">Check Our <span>Services</span></h3>
+        <div class="sppb-addon-content">There are many variations of passages of Lorem Ipsum available, but the
+          <br>majority have suffered words look even slightly believable.
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div id="carouselExampleControls15" class="carousel slide" data-bs-ride="carousel"
+            style="margin-right: -12px;">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" style="width: 100%; height:100%;"
+                  src="public/images/photo-of-wine-bottle-and-food-on-table-1579253.jpg" alt="slide2" role="img"
+                  aria-label="Placeholder: First slide">
+              </div>
+              <div class="carousel-item active">
+                <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" style="width: 100%; height:100%;"
+                  src="public/images/woman-leaning-on-handrail-in-room-1838554.jpg" alt="slide1" role="img"
+                  aria-label="Placeholder: First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" style="width: 100%; height:100%;"
+                  src="public/images/well-lit-bedroom-2029719.jpg" alt="slide1" role="img"
+                  aria-label="Placeholder: First slide">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="ourservices">
+            <h3 class="sppb-addon-title">Discover Our <span>Services</span></h3>
+            <div class="sppb-addon-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry
+              norem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+              took a galley of type and scrambled it to make a type specimen of book.<br><br>Duis autem vel eum iriure
+              dolor in hendrerit in vulputate velit molestie consequat, vel illum colore tu feugiat nulla facilisis at
+              vero.</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="ourservices">
+            <h3 class="sppb-addon-title">Discover Our <span>Services</span></h3>
+            <div class="sppb-addon-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry
+              norem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+              took a galley of type and scrambled it to make a type specimen of book.<br><br>Duis autem vel eum iriure
+              dolor in hendrerit in vulputate velit molestie consequat, vel illum colore tu feugiat nulla facilisis at
+              vero.</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="carouselExampleControls20" class="carousel slide" data-bs-ride="carousel"
+            style="margin-left: -12px;">
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" style="width: 110%; height:100%;"
+                  src="public/images/woman-soaking-on-the-swimming-pool-3225531.jpg" alt="slide2" role="img"
+                  aria-label="Placeholder: First slide">
+              </div>
+              <div class="carousel-item active">
+                <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" style="width: 100%; height:100%;"
+                  src="public/images/woman-in-swimming-pool-1371313.jpg" alt="slide1" role="img"
+                  aria-label="Placeholder: First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" style="width: 100%; height:100%;"
+                  src="public/images/scenic-view-of-the-resort-764827.jpg" alt="slide1" role="img"
+                  aria-label="Placeholder: First slide">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="pur">
+      <div class="row padding">
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="public/images/palm-trees-at-night-258154.jpg" alt="anh1">
+            <div class="card-body">
+              <div class="sppb-article-info-wrap">
+                <h3>
+                  Pursue pleasure rationally en counter consequen ces</h3>
+                <div class="sppb-article-meta"><span class="sppb-meta-category">Travel</span><span
+                    class="sppb-meta-author">BookMe</span>
+                </div>
+                <div class="sppb-article-introtext">There anyone who loves or pursues or desires to obtain pains of
+                  itself, because it is pain because occasionally
+                  ...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="public/images/man-covering-face-with-frame-2017802.jpg" alt="anh2">
+            <div class="card-body">
+              <div class="sppb-article-info-wrap">
+                <h3>To take a
+                  trivial example, which of us ever </h3>
+                <div class="sppb-article-meta"><span class="sppb-meta-category">Travel</span><span
+                    class="sppb-meta-author">BookMe</span>
+                </div>
+                <div class="sppb-article-introtext">There anyone who loves or pursues or desires to obtain pains of
+                  itself, because it is pain because occasionally
+                  ...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="public/images/gallery03.jpg" alt="anh3" style="height: 248.24px;">
+            <div class="card-body">
+              <div class="sppb-article-info-wrap">
+                <h3>Exercise, except
+                  to obtain some advantage.</h3>
+                <div class="sppb-article-meta"><span class="sppb-meta-category">Travel</span><span
+                    class="sppb-meta-author">BookMe</span>
+                </div>
+                <div class="sppb-article-introtext">There anyone who loves or pursues or desires to obtain pains of
+                  itself, because it is pain because occasionally
+                  ...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="footer">
+    <div class="container-fluid">
+      <div id="footer1">
+        <div class="sp-column "><span class="sp-copyright">2021 Copyright. BookMe</span></div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
